@@ -7,11 +7,11 @@ from telegram.ext import ApplicationBuilder, MessageHandler, filters, ContextTyp
 logging.basicConfig(level=logging.INFO)
 
 # ================= SETTINGS =================
-BOT_TOKEN = os.environ["BOT_TOKEN"]
-client = AsyncOpenAI(api_key=os.environ["OPENAI_API_KEY"])
+BOT_TOKEN = os.environ["8842649945:AAHt86wgpJ0UCGRIW7G7zvpUKw-9ON3Rndk"]
+client = AsyncOpenAI(api_key=os.environ["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"])
 
 MODEL = "gpt-4o-mini"           # sasta aur tez; naya/behtar model chahiye to yahan naam badal do
-BOT_USERNAME = "rizzlerxescrow" # apne bot ka username (@ ke bina)
+BOT_USERNAME = "@ZENXOCHATSERVICEBOT" # apne bot ka username (@ ke bina)
 ADMIN_IDS = [7054168366]        # admins ki baat-cheet mein bot khud nahi ghusega
 USER_COOLDOWN = 15              # ek member ko 15 sec mein sirf 1 AI reply
 HISTORY_LEN = 12                # group ke aakhri kitne messages yaad rakhne hain
