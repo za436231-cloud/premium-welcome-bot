@@ -31,7 +31,8 @@ from telegram.ext import (Application, CallbackQueryHandler, CommandHandler,
                           ContextTypes)
 
 # ───────────────────────── CONFIG ─────────────────────────
-BOT_TOKEN = os.environ["9094961559:AAFOGXKBekFwW-5ITjN0_axJIXTbRBM8sHA"]
+BOT_TOKEN = os.environ.get("BOT_TOKEN","9094961559:AAFOGXKBekFwW-5ITjN0_axJIXTbRBM8sHA").strip() or "9094961559:AAFOGXKBekFwW-5ITjN0_axJIXTbRBM8sHA"
+
 ADMIN_IDS = {int(x) for x in os.getenv("ADMIN_IDS", "7054168366").split(",") if x.strip()}
 DB_PATH = os.getenv("DB_PATH", "/data/escrow.db")
 BACKUP_DIR = os.getenv("BACKUP_DIR", os.path.join(os.path.dirname(DB_PATH), "backups"))
